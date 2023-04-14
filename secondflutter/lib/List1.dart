@@ -38,7 +38,6 @@ print("Reserved: ${list.reversed}");
 print("First: ${list.first}");
 print("Last:${list.last}");
 print("Empty:${list.isEmpty}");
-
-
+print("Is not Empty: ${list.isNotEmpty}");
 
 }
