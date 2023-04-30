@@ -4,6 +4,7 @@ class LoginPage extends StatelessWidget{
   Widget build(BuildContext context){
     return Material(
       color: Colors.white,
+      child:SingleChildScrollView(
       child: Column(
         children: [Image.asset("Asset/images/login.png"
         ,fit: BoxFit.cover,),
@@ -12,7 +13,7 @@ class LoginPage extends StatelessWidget{
           )
         ,Text("Welcome",
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 30,
             fontWeight:FontWeight.bold
           ),),
           SizedBox(
@@ -36,14 +37,18 @@ class LoginPage extends StatelessWidget{
                 ),
               ),
               SizedBox(
-                height: 20.0,
+                height: 40.0,
               ),
-              ElevatedButton(onPressed:  , child: Text("Login"))
+              ElevatedButton(onPressed:(
+                  ){
+                print("Hello Coders");
+              } , child: Text("Login"),
+              style:TextButton.styleFrom(minimumSize: Size(150, 50)),)
             ],
           )
     )
         ],
-      ),
+      )),
     );
   }
 }
