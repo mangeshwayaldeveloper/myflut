@@ -71,10 +71,10 @@ class _LoginPageState extends State<LoginPage> {
                     },
                     child: AnimatedContainer(
                       duration: Duration(seconds: 1),
-                      width: changeButton?100:150,
+                      width: changeButton?50:150,
                       height: 50,
                       alignment: Alignment.center,
-                      child: Text(
+                      child: changeButton?Icon(Icons.done,color:Colors.white,):Text(
                         "Login",
                         style: TextStyle(
                             color: Colors.white,
@@ -83,8 +83,8 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       decoration: BoxDecoration(
                          color: Colors.deepOrange,
-                          shape: changeButton?BoxShape.circle:BoxShape.rectangle,
-                          // borderRadius: BorderRadius.circular(changeButton?18:8)
+                          // shape: changeButton?BoxShape.circle:BoxShape.rectangle,
+                          borderRadius: BorderRadius.circular(changeButton?50:8)
                       ),
                     ),
                   )
