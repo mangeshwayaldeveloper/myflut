@@ -6,8 +6,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("First Dart App"),
+      appBar:AppBar(
+        backgroundColor: Colors.white,
+        title: Text("My App"),
       ),
       body: Center(
         child: Container(
