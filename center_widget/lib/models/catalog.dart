@@ -1,4 +1,4 @@
-class CatalogMode{
+class CatalogModel{
   static final items = [
     Item(
         id: 1,
